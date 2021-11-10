@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.87.0" />
+    <title>DiCA - SIC</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/carousel/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="{% static '/assets/dist/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'carousel.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-weight: 800"
+            >DiCA - SIC</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarCollapse"
+            style="flex-grow: 0"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#componentes">Componentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conexiones">Conexiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#montaje">Montaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#codigo">Código</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#demostracion">Demostración</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Dispensador de Comida para animales</h1>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Un camino a la automatización de tareas rutinarias</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing container-s">
+        <!-- Three columns of text below the carousel -->
+        <div class="section-top" id="nosotros"></div>
+        <h1>Nosotros</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              src="{% static '/assets/img/elias.jpeg' %}"
+              alt="Elias Lezcano"
+            />
+
+            <h2>Elias Lezcano</h2>
+            <p>Alumno del 2do BTI</p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="{% static '/assets/img/ivan.jpeg' %}"
+              alt="Iván Domínguez"
+            />
+
+            <h2>Iván Domínguez</h2>
+            <p>Alumno del 3ero BTI</p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="{% static '/assets/img/jeremias.jpeg' %}"
+              alt="Jeremias Borba"
+            />
+
+            <h2>Jeremías Borba</h2>
+            <p>Alumno del 3ero BTI</p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette container-s">
+          <div class="section-top" id="componentes"></div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Componentes</h2>
+            <p class="lead">
+              Lo primero que hacemos es definir los componentes necesarios
+            </p>
+            <p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#componentesModal"
+              >
+                Ver detalles &raquo;
+              </button>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="{% static '/assets/img/componentes1.jpg' %}"
+              alt="Componentes"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette container-s">
+          <div class="section-top" id="conexiones"></div>
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Conexiones</h2>
+            <p class="lead">
+              Después de realizar las conexiones correspondientes al arduino
+              debería quedar así.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              src="{% static '/assets/img/conexion.jpg' %}"
+              alt="Imagen de conexiones"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette container-s">
+          <div class="section-top" id="montaje"></div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Montaje</h2>
+            <p class="lead">
+              Al finalizar el montaje del circuito de arduino con los
+              componentes como la botella, el cintillo, el cartón, etc. debería
+              quedar así.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="{% static '/assets/img/fotos-de-el-comedor-de-perro.PNG' %}"
+              alt="Montaje"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette container-s">
+          <div class="section-top" id="codigo"></div>
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Código</h2>
+            <p class="lead">
+              El código se basa en que cuando el sensor detecte algo ( animal o
+              una persona ) a cierta distancia se active el servo motor
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="{% static '/assets/img/codigo.jpeg' %}" alt="Código" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette container-s">
+          <div class="section-top" id="demostracion"></div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Demostración</h2>
+            <p class="lead">Esta es una breve demostración del proyecto.</p>
+          </div>
+          <div class="col-md-5">
+            <video controls>
+              <source src="{% static '/assets/videos/demostracion.mp4' %}" />
+            </video>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+      </footer>
+
+      <div
+        class="modal fade"
+        id="componentesModal"
+        tabindex="-1"
+        aria-labelledby="componentesModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="componentesModalLabel">
+                Lista de Componentes
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="{% static '/assets/dist/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+</html>
